@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/prin.avif">
+    <title>Portafolio | Onik Orosco</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <a id="cvButton" href="#" onclick="abrirYDescargar()" class="cv-button">📄 Ver CV</a>
+
+<script>
+    function abrirYDescargar() {
+        let url = "img/CV_ONIK.pdf";
+        window.open(url, "_blank"); 
+        let link = document.createElement("a");
+        link.href = url;
+        link.download = "CV_ONIK.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+</script>
+
+
+        </ul>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <img src="img/fondo.jpg" alt="Libertad" class="Libertad">
+            <img src="img/prin.avif" alt="Mi Foto" class="profile-pic">
+            <h1>Bienvenido a mi Portafolio</h1>
+            <h2 class="latido">Desarrollador de Software | Ingeniero de Software con IA</h2>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="section">
+        <h2>👨‍💻 Sobre Mí</h2>
+        <div class="about-container">
+          <div class="about-text" data-aos="fade-right">
+            <h3 class="hola">¡Hola! Soy Onik Orosco 👋</h3>
+            <p>
+              Joven desarrollador de software con formación en <strong>Ingeniería de Software con Inteligencia Artificial</strong>.
+              Apasionado por la <strong>tecnología</strong>, la <strong>programación</strong> y la creación de sistemas innovadores.
+              Me especializo en <strong>desarrollo web, bases de datos</strong> y <strong>diseño de interfaces</strong>.
+              Siempre en búsqueda de nuevos retos y aprendizajes para crecer profesionalmente.
+            </p>
+            <ul class="skills-list">
+                <li>✅ Desarrollo Web</li>
+                <li>✅ Bases de Datos</li>
+                <li>✅ Arquitectura de Software</li>
+                <li>✅ Metodologías Ágiles</li>
+              </ul>              
+          </div>
+          <div class="about-image" data-aos="fade-left">
+            <img src="img/foto.jpg" alt="Foto de Onik" class="profile-photo">
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Sección Skills -->
+    <section id="skills" class="section">
+        <h2>Habilidades</h2>
+        <div class="skill">
+            <p>✨ JavaScript</p>
+            <div class="skill-bar" data-percent="50">
+                <div class="skill-fill"></div>
+                <span class="skill-percent">50%</span>
+            </div>
+        </div>
+        
+        <div class="skill">
+            <p>💻 HTML & PHP (PDO)</p>
+            <div class="skill-bar" data-percent="60">
+                <div class="skill-fill"></div>
+                <span class="skill-percent">60%</span>
+            </div>
+        </div>
+        
+        <div class="skill">
+            <p>🎨 CSS</p>
+            <div class="skill-bar" data-percent="60">
+                <div class="skill-fill"></div>
+                <span class="skill-percent">60%</span>
+            </div>
+        </div> 
+        
+        <div class="skill">
+            <p>🗂️ SQL (Oracle, MySQL)</p>
+            <div class="skill-bar" data-percent="40">
+                <div class="skill-fill"></div>
+                <span class="skill-percent">40%</span>
+            </div>
+        </div>  
+
+        <div class="skill">
+            <p>☕ Java (NetBeans)</p>
+            <div class="skill-bar" data-percent="50">
+                <div class="skill-fill"></div>
+                <span class="skill-percent">50%</span>
+            </div>
+        </div>  
+
+        <div class="skill">
+            <p>🚀 MVC & Metodologías Ágiles (Scrum)</p>
+            <div class="skill-bar" data-percent="40">
+                <div class="skill-fill"></div>
+                <span class="skill-percent">40%</span>
+            </div>
+        </div>  
+
+        <div class="skill">
+            <p>🔗 Git & GitHub</p>
+            <div class="skill-bar" data-percent="60">
+                <div class="skill-fill"></div>
+                <span class="skill-percent">60%</span>
+            </div>
+        </div>  
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="section">
+        <h2>🚀 Mis Proyectos</h2>
+        <section class="projects">
+            <p>Aquí podrás ver algunos de mis proyectos destacados en desarrollo web y software.</p>
+            <div class="projects-container">
+                <div class="project-card" data-aos="fade-up">
+                    <img src="img/bd.png" alt="Proyecto 1">
+                    <h3>📄 Sistema de Préstamos</h3>
+                    <p>Aplicación web para gestionar préstamos con PHP, PDO y arquitectura MVC.</p>
+                    <a href="https://www.instagram.com/onikorosco" target="_blank">🔗 Ver Proyecto</a>
+                </div>
+        
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/kh.png"Proyecto 2>
+                    <h3>🍦 Konitos Heladería</h3>
+                    <p>Sitio web interactivo para una heladería, con registro y login.</p>
+                    <a href="#">🔗 Ver Proyecto</a>
+                </div>
+        
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="img/sv.png" alt="Proyecto 3">
+                    <h3>🌎 Sistema de Visitas</h3>
+                    <p>Plataforma para registrar visitas a comunidades nativas con Scrum.</p>
+                    <a href="#">🔗 Ver Proyecto</a>
+                </div>
+        
+                <!-- Proyectos ocultos -->
+                <div class="more-projects" style="display: none;">
+                    <div class="project-card" data-aos="fade-up">
+                        <img src="img/sr.png" alt="Proyecto 4">
+                        <h3>📊 Sistema de Reportes</h3>
+                        <p>Generación automática de reportes dinámicos en PDF y Excel.</p>
+                        <a href="#">🔗 Ver Proyecto</a>
+                    </div>
+        
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="img/pr.png" alt="Proyecto 5">
+                        <h3>🔐 Portal de Registro</h3>
+                        <p>Plataforma segura de registro de usuarios con validación y base de datos.</p>
+                        <a href="#">🔗 Ver Proyecto</a>
+                    </div>
+                </div>
+                <button id="btnVerMas">✨ Ver Más Proyectos</button>
+                <button id="btnVerMenos">⬅️ Ver Menos</button>
+            </div>
+        </section>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo" required>
+            <textarea placeholder="Tu Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="contact-info">
+            <div class="contact-card">
+                <p><i class="fas fa-envelope"></i> onikorosco@hotmail.com</p>
+                <p><i class="fas fa-phone"></i> +51 904 235 671</p>
+                <p><i class="fas fa-map-marker-alt"></i> Iquitos, Perú</p>
+            </div>            
+        </div>
+        <!-- Redes Sociales -->
+        <div class="social-icons">
+            <a href="https://github.com/onikorosco7" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/oroscoonik" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/onik-a-orosco-mori-b5ab8a290/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/onikorosco" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Onik Orosco. Todos los derechos reservados.</p>
+        <p class="copyright">Diseñado y desarrollado por Onik Orosco.</p>
+    </footer>
+
+    <!-- Enlace a JavaScript -->
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // velocidad
+    once: true     // animar solo una vez
+  });
+</script>
+
+<script>
+    const btn = document.getElementById('btnVerMas');
+    const btnMenos = document.getElementById('btnVerMenos');
+    const moreProjects = document.querySelector('.more-projects');
+
+    btn.addEventListener('click', () => {
+        moreProjects.style.display = 'flex';
+        btn.style.display = 'none';
+        btnMenos.style.display = 'block';
+        AOS.refresh(); // Mantienes la animación
+    });
+
+    btnMenos.addEventListener('click', () => {
+        moreProjects.style.display = 'none';
+        btn.style.display = 'block';
+        btnMenos.style.display = 'none';
+    });
+</script>
+  
+</body>
+</html>
